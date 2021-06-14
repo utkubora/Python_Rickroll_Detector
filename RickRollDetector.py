@@ -16,7 +16,7 @@ class Rick():
 
 	def RickRollChecker(self):
 
-		file156 = open(self.file_way+"\\rickrollpast.txt", "r+", encoding="utf-8")
+		file156 = open(self.file_way+self.char1+"rickrollpast.txt", "r+", encoding="utf-8")
 		ExRicks = [i for i in file156.readlines()]
 
 		url=self.url
