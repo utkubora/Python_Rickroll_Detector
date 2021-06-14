@@ -2,7 +2,6 @@ from ShazamAPI import Shazam
 import youtube_dl
 import os
 import PythonYoutube
-from moviepy.editor import *
 from pydub import AudioSegment
 import math
 import sys
