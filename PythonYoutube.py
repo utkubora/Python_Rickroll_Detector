@@ -41,10 +41,17 @@ class YoutubeCommentFounder():
         all_comments = [elem.text for elem in comment_elems]
 
         final = False
+        counter = 0
         for i in all_comments:
             b = str(i).lower()
-            if "rickroll" in b or "rick" in b or "astley" in b or "rolled" in b or "rikrolling" in b:
+            if "rickroll" in b or "rolled" in b or "rikrolling" in b:
                 final = True
+            elif "rick" in b or "astley" in b:
+                counter+=1
+
+        if counter>10:
+            final = True
+
         return final
 
 
